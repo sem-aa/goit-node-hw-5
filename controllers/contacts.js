@@ -18,8 +18,7 @@ const getById = async (req, res, next) => {
   try {
     const userId = req.user?.id
     const contact = await Contacts.getContactById(userId,  req.params.contactId)
-    console.log(contact)
-    if (contact) {
+      if (contact) {
       return res.json({
         status: 'success',
         code: 200,

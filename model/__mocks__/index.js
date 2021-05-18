@@ -21,12 +21,12 @@ const removeContact = jest.fn( (userId, contactId) => {
 
 const addContact = jest.fn( (userId, body) => {
   contacts.push({...body, _id: "609fcb48a2e9cf0e785bb715"})
-  return contacts
+  return {...body, _id: "609fcb48a2e9cf0e785bb715"}
 })
 
 
 const updateContact = jest.fn((userId, contactId, body) => {
-    const [contact] = contacts.filter((el) => String(el._id) === String(contactId))
+    let [contact] = contacts.filter((el) => String(el._id) === String(contactId))
     if (contact) {
         contact = {...contact, ...body}
     }

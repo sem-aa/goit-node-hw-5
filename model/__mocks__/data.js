@@ -3,14 +3,14 @@ const contacts = [
     _id: "6082ddab8ff28a2c3c59e719",
     name : "Simon Morton",
     email : "dui.Fusce.diam@Donec.com",
-    phone : "(233) 738-2360",
+    phone : "233 738 2360",
     favorite : true
     },
     {
     _id : "6082ddab8ff28a2c3c59e71a",
     name : "Thomas Lucas",
     email : "nec@Nulla.com",
-    phone : "(704) 398-7993",
+    phone : "704 398 7993",
     favorite : false
     }
 ]
@@ -18,9 +18,8 @@ const contacts = [
 const newContact = {
     name: 'New Contact',
     email: 'new@mail.com',
-    phone: '555 555 555',
-    favorite: false
-}
+    phone: '7777777',
+    }
 
 const User = {
     _id: "60a11c86cd73e8222c7f193f",

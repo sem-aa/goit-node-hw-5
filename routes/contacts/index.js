@@ -17,7 +17,7 @@ router.get('/business',guard, role(Status.BUSINESS), cntrl.business)
 router.get('/:contactId', guard, validationObjectId, cntrl.getById)
 router.delete('/:contactId', guard, cntrl.deleteContact)
 router.patch('/:contactId', guard, validUpdateContact, cntrl.updContact)
-router.put('/:contactId', guard ,validUpdateContact, cntrl.updContactPut)
+router.put('/:contactId', guard , cntrl.updContactPut)
 
 router.patch('/:contactId/favorite', guard, cntrl.updStatus)
 
